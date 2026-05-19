@@ -159,7 +159,7 @@ export default function About({ navigateTo }: { navigateTo: (path: string) => vo
                 className="space-y-4"
               >
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Tzanis <br className="hidden lg:block"/>Palioudakis</h1>
-                <p className="text-xl text-[#c4b5fd] font-medium">Senior Digital Designer specializing in Ux & Interaction Design</p>
+                <p className="text-xl text-[#c4b5fd] font-medium">Senior UI/UX Designer</p>
                 
                 <div className="pt-4 flex flex-col gap-3">
                   <a href="mailto:t.palioudakis@outlook.com" className="inline-flex items-center gap-3 text-sm font-semibold text-zinc-400 hover:text-white bg-zinc-900/50 hover:bg-zinc-800 border border-zinc-900 px-5 py-3 rounded-2xl transition-colors w-fit">
@@ -190,13 +190,13 @@ export default function About({ navigateTo }: { navigateTo: (path: string) => vo
                 About
               </h2>
               <p className="text-white">
-                A creative and results-driven Senior Digital Designer with over 15 years of experience.
+                As a Senior UI/UX & Digital Designer with over 15 years of experience, I specialize in crafting intuitive, user-centered digital products that bridge business goals with seamless user experiences. Currently at Plaisio, my work focuses on developing scalable design systems, optimizing e-commerce user journeys, and delivering impactful digital interfaces for diverse brand ecosystems.
               </p>
               <p>
-                I specialize in blending compelling visual design with user-centered UX principles to create engaging digital experiences. I have a proven ability in leading design for high-impact marketing campaigns, newsletters, and high-conversion landing pages for major retail brands.
+                I am deeply passionate about the future of design operations. I actively integrate AI-driven workflows, generative design tools, and AI-assisted development (vibe coding) into my daily process. This allows me to accelerate ideation, automate repetitive tasks, and focus on high-level strategic problem-solving and rapid prototyping.
               </p>
               <p>
-                Certified in UX and Analytics by the Nielsen Norman Group, I am highly proficient in leveraging AI tools to enhance design workflows and creativity. Expert in Figma and Adobe Creative Suite, I'm always eager to apply my hybrid skill set to challenging roles.
+                Proficient in Figma, the Adobe Creative Suite, and emerging AI technologies, I collaborate closely with cross-functional teams (product, marketing, and engineering) to transform complex requirements into clean, engaging, and highly functional digital solutions. My goal is to continuously push the boundaries of design efficiency while delivering interfaces that drive engagement and maximize customer satisfaction.
               </p>
             </motion.section>
 
@@ -216,7 +216,7 @@ export default function About({ navigateTo }: { navigateTo: (path: string) => vo
                 {[
                   {
                     company: "ΠΛΑΙΣΙΟ A.E.B.E. | Athens, Greece",
-                    role: "Senior Digital Designer, Digital Content Creation",
+                    role: "Senior UI/UX & Digital Designer",
                     period: "2021 — Present",
                     description: "Led the strategic development of daily visual content, creating engaging newsletters, dynamic digital banners, and high-conversion landing pages that directly supported marketing and e-commerce objectives. Collaborated closely with marketing and development teams. Applied UI/UX best practices to design and refine user interfaces for promotional campaigns."
                   },

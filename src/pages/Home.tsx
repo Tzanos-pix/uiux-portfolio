@@ -186,7 +186,7 @@ export default function Home({
           }}
           className="text-zinc-500 max-w-2xl text-base sm:text-lg md:text-xl mb-12 leading-relaxed font-medium"
         >
-          {"I blend user-centered design with business strategy to create intuitive interfaces and performance-driven marketing campaigns.".split(" ").map((word, i, arr) => (
+          {"I blend user-centered design with business strategy to create intuitive interfaces, scalable design systems, and highly converting digital products.".split(" ").map((word, i, arr) => (
             <span key={i} className="inline-block whitespace-pre">
               <motion.span
                 variants={{
@@ -267,7 +267,7 @@ export default function Home({
                   Plaisio Black Friday
                 </h3>
                 <p className="text-zinc-900/80 font-semibold text-base md:text-lg leading-relaxed mb-4">
-                  Modular visual system & landing page.
+                  Modular UI design system & high-conversion e-commerce pages.
                 </p>
                 <div className="flex gap-3 mb-6">
                   <div className="bg-zinc-950 text-white px-3 py-1.5 rounded-lg border border-zinc-800/50 flex items-center gap-1.5">
