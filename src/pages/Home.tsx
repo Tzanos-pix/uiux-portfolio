@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Award,
   TrendingUp,
@@ -15,9 +16,24 @@ import { Logo } from "../components/ui/Logo";
 
 export default function Home({
   navigateTo,
+  returnFrom,
 }: {
   navigateTo: (path: string) => void;
+  returnFrom?: string | null;
 }) {
+  useEffect(() => {
+    if (returnFrom) {
+      setTimeout(() => {
+        const el = document.getElementById(`card-${returnFrom}`);
+        if (el) {
+          el.scrollIntoView({ behavior: 'auto', block: 'center' });
+        }
+      }, 50);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [returnFrom]);
+
   const { scrollY } = useScroll();
   const bgOpacity = useTransform(scrollY, [0, 800], [1, 0]);
   const bgScale = useTransform(scrollY, [0, 800], [1, 1.1]);
@@ -187,6 +203,7 @@ export default function Home({
         </motion.p>
 
         <motion.div
+          id="card-about"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
@@ -226,6 +243,7 @@ export default function Home({
         >
           {/* BENTO BOX 1: Plaisio */}
           <div
+            id="card-plaisio"
             onClick={() => navigateTo("plaisio")}
             className="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 md:row-span-2 flex flex-col"
           >
@@ -317,6 +335,7 @@ export default function Home({
 
           {/* BENTO BOX 3: BetEase */}
           <motion.div
+            id="card-betease"
             variants={itemVariants}
             whileHover={{ 
               scale: 1.02, 
@@ -380,6 +399,7 @@ export default function Home({
 
           {/* BENTO BOX 5: Mamba */}
           <motion.div
+            id="card-mamba"
             variants={itemVariants}
             whileHover={{ 
               scale: 1.02, 
