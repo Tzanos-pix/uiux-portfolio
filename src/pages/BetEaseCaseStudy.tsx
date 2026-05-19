@@ -15,7 +15,7 @@ export default function BetEaseCaseStudy({ navigateTo }: { navigateTo: (path: st
   const cardBg = "#121212";
 
   return (
-    <div className="min-h-screen font-sans selection:bg-[#CCFF00]/20 selection:text-[#CCFF00] pb-24 text-white font-display tracking-tight" style={{ backgroundColor: darkBg }}>
+    <div className="min-h-screen w-full font-sans selection:bg-[#CCFF00]/20 selection:text-[#CCFF00] pb-24 text-white font-display tracking-tight overflow-x-hidden" style={{ backgroundColor: darkBg }}>
       {/* Navigation (Sticky) */}
       <nav className="fixed w-full z-50 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-zinc-900">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">

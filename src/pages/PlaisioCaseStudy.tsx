@@ -14,7 +14,7 @@ export default function PlaisioCaseStudy({
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-zinc-300 font-sans selection:bg-zinc-800 selection:text-white pb-24 relative">
+    <div className="min-h-screen w-full bg-[#0a0a0a] text-zinc-300 font-sans selection:bg-zinc-800 selection:text-white pb-24 relative overflow-x-hidden">
       <div className="noise-overlay fixed" style={{ opacity: 0.04 }}></div>
       {/* Navigation (Dark Mode - Nexus Style) */}
       <nav className="fixed w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-zinc-900">

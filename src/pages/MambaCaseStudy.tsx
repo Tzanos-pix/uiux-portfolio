@@ -14,7 +14,7 @@ export default function MambaCaseStudy({
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-zinc-300 font-sans selection:bg-purple-900 selection:text-white pb-24 relative">
+    <div className="min-h-screen w-full bg-[#0a0a0a] text-zinc-300 font-sans selection:bg-purple-900 selection:text-white pb-24 relative overflow-x-hidden">
       <div className="noise-overlay fixed" style={{ opacity: 0.04 }}></div>
       
       {/* Navigation */}

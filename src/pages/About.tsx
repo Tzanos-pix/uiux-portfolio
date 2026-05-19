@@ -107,7 +107,7 @@ export default function About({ navigateTo }: { navigateTo: (path: string) => vo
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-white font-sans selection:bg-[#CCFF00]/20 selection:text-[#CCFF00] font-display tracking-tight">
+    <div className="min-h-screen w-full bg-[#0A0A0A] text-white font-sans selection:bg-[#CCFF00]/20 selection:text-[#CCFF00] font-display tracking-tight overflow-x-hidden">
       {/* Navigation (Sticky) */}
       <nav className="fixed w-full z-50 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-zinc-900">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
