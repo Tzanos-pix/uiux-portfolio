@@ -44,11 +44,16 @@ export default function Home({
   };
 
   return (
-    <div className="min-h-screen bg-app-bg text-app-text font-sans selection:bg-app-primary/10 selection:text-app-primary pb-12 relative overflow-x-hidden">
+    <div className="min-h-screen w-full bg-app-bg text-app-text font-sans selection:bg-app-primary/10 selection:text-app-primary pb-12 relative overflow-x-hidden">
       {/* Background Layers */}
-      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden h-[100vh]">
         <motion.div 
-          style={{ opacity: bgOpacity, scale: bgScale }}
+          style={{ 
+            opacity: bgOpacity, 
+            scale: bgScale, 
+            willChange: "transform, opacity",
+            transformOrigin: "center center"
+          }}
           className="absolute inset-0"
         >
           <img fetchPriority="high" loading="eager" decoding="async" 
